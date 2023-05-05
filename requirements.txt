@@ -1,0 +1,24 @@
+# local_lib
+#-e.
+
+# Data Manipulation libraries:
+numpy
+pandas
+scipy
+stats
+
+# Data Visualization libraries:
+matplotlib
+seaborn
+
+# ML related  libraries:
+scikit-learn
+xgboost
+
+# Deployment libraries:
+flask
+
+# dvc:
+dvc
+dvc[gdrive]
+
