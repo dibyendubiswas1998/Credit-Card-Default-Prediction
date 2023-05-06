@@ -32,12 +32,12 @@ def prediction(config_path, data_path):
         for col in cols:
             data = handle_outliers(data=data, col=col, log_file=prediction_logs)
 
-        data = standardization(x_data=data, log_file=prediction_logs) # scale the data
+        data_scale = standardization(x_data=data, log_file=prediction_logs) # scale the data
         model_path = config['artifacts']['model']['best_model']['best_model_path'] # artifacts/Best_Model/model.joblib
         model = joblib.load(model_path) # load the model
         log(file_object=prediction_logs, log_message=f"predict the output based on best model") # logs the details
 
-        y_predict = model.predict(data)
+        y_predict = model.predict(data_scale)
         new_data = pd.DataFrame(data, columns=cols)
         new_data['default'] = y_predict
         save_data(data=new_data, new_data_path=prediction_file_path, log_file=prediction_logs)
