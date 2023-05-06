@@ -1,0 +1,13 @@
+{
+    "Model Name": "RandomForestClassifier",
+    "train data": {
+        "accuracy score": 0.8133079440004292,
+        "recall score": 0.7846369316957552,
+        "precision score": 0.8309658280563638
+    },
+    "test data": {
+        "accuracy score": 0.7641932198457733,
+        "recall score": 0.7210970464135021,
+        "precision score": 0.7946989072308766
+    }
+}
