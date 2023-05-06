@@ -1,5 +1,5 @@
 # local_lib
-#-e.
+-e.
 
 # Data Manipulation libraries:
 numpy
@@ -14,6 +14,7 @@ seaborn
 # ML related  libraries:
 scikit-learn
 xgboost
+imblearn
 
 # Deployment libraries:
 flask
