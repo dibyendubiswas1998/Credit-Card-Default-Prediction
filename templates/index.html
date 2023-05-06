@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Default Prediction</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link href="{{url_for('static', filename='css/index.css') }}" rel="stylesheet"/>
+</head>
+<body>
+    <div id="div_1">
+        <div class="div_1_1">
+            <h1>Credit Card Fault Detection</h1>
+        </div>
+        <form name="form1" action="/train_evaluation" method="post" class="form1">
+<!--            <h2>Train & Evaluate the Model</h2>-->
+            <div class="myfrm">
+                <input type="text" placeholder="Enter train data file path" name="train">
+            </div>
+            <button type="submit">Train</button><br><br><br>
+            <span>Result: {{status1}}</span>
+        </form>
+
+        <form name="form2" action="/prediction" method="post" class="form2">
+            <div class="myfrm">
+                <input type="text" placeholder="Enter prediction data file path" name="prediction">
+            </div>
+            <button type="submit">Prediction</button><br><br><br>
+            <span>Result: {{status2}}</span><br><br><br>
+            {% if status2: %}
+                <a href="{{ url_for('Download') }}"><button type="button" class="download">Download</button></a>
+            {% else %}
+<!--                <button type="button" class="download">No Download</button>-->
+            {% endif %}
+        </form>
+    </div>
+
+</body>
+</html>
