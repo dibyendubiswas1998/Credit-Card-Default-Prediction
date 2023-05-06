@@ -1,0 +1,65 @@
+# Base:
+base:
+  version: v.0.0.1
+
+# mention source of data:
+data_source:
+  raw_data_path: Raw Data/new_data.csv
+
+# Detailed about Categorical features, Numerical features and output column:
+data_defination:
+  output_col: default
+
+# Splitting:
+split:
+  random_state: 101
+  split_ratio: 0.20
+
+# A particular folder where you store Raw Dara, Processed Data, Model, Logs files, Model Performance Report, etc.
+artifacts:
+  artifacts_dir: artifacts
+
+  # Mention Logs files:
+  log_files:
+    log_files_dir: artifacts/Logs
+    training_log_file: artifacts/Logs/training_logs.txt
+    evaluation_log_file: artifacts/Logs/evaluation_logs.txt
+    prediction_file: artifacts/Logs/prediction_logs.txt
+
+  # Raw data directory & raw data:
+  raw_data:
+    raw_data_dir: artifacts/Raw_Data
+    new_raw_data_path: artifacts/Raw_Data/new_data.csv
+
+  # Processed data:
+  processed_data:
+    processed_dir: artifacts/Processed_Data
+    train_path: artifacts/Processed_Data/train.csv
+    test_path: artifacts/Processed_Data/test.csv
+
+  # Model:
+  model:
+    model_dir: artifacts/Model
+    # Kmeans
+    kmeans:
+      kmeans_dir: artifacts/Model/Kmeans
+      cluster_img: artifacts/Model/Kmeans/kmeans.PNG
+      kmeans_model_path: artifacts/Model/Kmeans/Kmeans.joblib
+    # Random Forest
+    random_forest:
+      random_forest_dir: artifacts/Model/RandomForest
+      random_forest_model_path: artifacts/Model/RandomForest/random_forest_model.joblib
+    # XGBoost
+    xgboost:
+      xgboost_dir: artifacts/Model/XGBoost
+      xgboost_model_path: artifacts/Model/XGBoost/xgboost_model.joblib
+    # Best Model:
+    best_model:
+      best_model_dir: artifacts/Model/Best_Model
+      best_model_path: artifacts/Model/Best_Model/model.joblib
+      scores: artifacts/Model/Best_Model/score.json
+
+  # prediction:
+  prediction:
+    prediction_dir: artifacts/Prediction
+    prediction_file: artifacts/Prediction/predict.csv
