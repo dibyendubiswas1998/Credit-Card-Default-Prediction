@@ -1,0 +1,53 @@
+2023-05-06/18:45:58		load & save operation start
+2023-05-06/18:45:58		read the data, shape: (30000, 24)
+2023-05-06/18:45:59		store data in : artifacts/Raw_Data/new_data.csv
+2023-05-06/18:45:59		load & save process is completed successfully
+
+2023-05-06/18:45:59		pre-processed operation is start
+2023-05-06/18:45:59		read the data, shape: (30000, 24)
+2023-05-06/18:45:59		remove the duplicates from data
+2023-05-06/18:45:59		applying SMOTE technique to balance the data ----> oversampled
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: limit_bal
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: sex
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: education
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: marriage
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: age
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: re_pay_september
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: re_pay_august
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: re_pay_july
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: re_pay_june
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: re_pay_may
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: re_pay_april
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: bill_amt_september
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: bill_amt_august
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: bill_amt_july
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: bill_amt_june
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: bill_amt_may
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: bill_amt_april
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: pay_amt_september
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: pay_amt_august
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: pay_amt_july
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: pay_amt_june
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: pay_amt_may
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: pay_amt_april
+2023-05-06/18:46:00		Handle the Outliers using IQR method, col: default
+2023-05-06/18:46:00		Pre-processing operation is completed successfully
+
+2023-05-06/18:46:00		data splitting operation is start
+2023-05-06/18:46:00		split ghe data in tran.csv: (37286, 24) & test.csv: (9322, 24)
+2023-05-06/18:46:00		create directory for storing the data: artifacts/Processed_Data
+2023-05-06/18:46:01		store data in : artifacts/Processed_Data/train.csv
+2023-05-06/18:46:02		store data in : artifacts/Processed_Data/test.csv
+2023-05-06/18:46:02		splitting operation is completed successfully
+
+2023-05-06/18:46:02		model training process is start based on train data
+2023-05-06/18:46:02		Apply the standardization
+2023-05-06/18:46:02		create directory for store the models, path: artifacts/Model
+2023-05-06/18:46:02		create directory for store the XGBoost model, path: artifacts/Model/XGBoost
+2023-05-06/18:46:02		create directory for store the RandomForest model, path: artifacts/Model/RandomForest
+2023-05-06/18:46:14		apply the RandomForestClassifier() algorithm
+2023-05-06/18:46:14		create random_forest model and save into artifacts/Model/RandomForest/random_forest_model.joblib
+2023-05-06/18:46:28		apply the XGBClassifier() algorithm
+2023-05-06/18:46:28		create xgboost model and save into artifacts/Model/XGBoost/xgboost_model.joblib
+2023-05-06/18:46:28		model creation or model training process is completed successfully
+

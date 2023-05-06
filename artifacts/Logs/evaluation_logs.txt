@@ -1,0 +1,9 @@
+2023-05-06/18:46:28		model evaluation process is start
+2023-05-06/18:46:28		read the data, shape: (37286, 24)
+2023-05-06/18:46:29		Apply the standardization
+2023-05-06/18:46:29		read the data, shape: (9322, 24)
+2023-05-06/18:46:29		Apply the standardization
+2023-05-06/18:46:29		load the models XGBoost: artifacts/Model/XGBoost/xgboost_model.joblib, RandomForest: artifacts/Model/RandomForest/random_forest_model.joblib
+2023-05-06/18:46:29		roc_auc_score based on XGBoost: 0.7620798777826276
+2023-05-06/18:46:29		roc_auc_score based on XGBoost: 0.7641932198457733
+2023-05-06/18:46:30		best model is RandomForestClassifier, with score: {'Model Name': 'RandomForestClassifier', 'train data': {'accuracy score': 0.8133079440004292, 'recall score': 0.7846369316957552, 'precision score': 0.8309658280563638}, 'test data': {'accuracy score': 0.7641932198457733, 'recall score': 0.7210970464135021, 'precision score': 0.7946989072308766}}

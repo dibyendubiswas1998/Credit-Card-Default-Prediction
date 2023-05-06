@@ -1,0 +1,31 @@
+2023-05-06/18:46:30		prediction process start
+2023-05-06/18:46:30		create a directory for storing the data, path: artifacts/Prediction
+2023-05-06/18:46:30		read the data, shape: (9000, 23)
+2023-05-06/18:46:30		remove the duplicates from data
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: limit_bal
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: sex
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: education
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: marriage
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: age
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: re_pay_september
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: re_pay_august
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: re_pay_july
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: re_pay_june
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: re_pay_may
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: re_pay_april
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: bill_amt_september
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: bill_amt_august
+2023-05-06/18:46:30		Handle the Outliers using IQR method, col: bill_amt_july
+2023-05-06/18:46:31		Handle the Outliers using IQR method, col: bill_amt_june
+2023-05-06/18:46:31		Handle the Outliers using IQR method, col: bill_amt_may
+2023-05-06/18:46:31		Handle the Outliers using IQR method, col: bill_amt_april
+2023-05-06/18:46:31		Handle the Outliers using IQR method, col: pay_amt_september
+2023-05-06/18:46:31		Handle the Outliers using IQR method, col: pay_amt_august
+2023-05-06/18:46:31		Handle the Outliers using IQR method, col: pay_amt_july
+2023-05-06/18:46:31		Handle the Outliers using IQR method, col: pay_amt_june
+2023-05-06/18:46:31		Handle the Outliers using IQR method, col: pay_amt_may
+2023-05-06/18:46:31		Handle the Outliers using IQR method, col: pay_amt_april
+2023-05-06/18:46:31		Apply the standardization
+2023-05-06/18:46:31		predict the output based on best model
+2023-05-06/18:46:31		store data in : artifacts/Prediction/predict.csv
+2023-05-06/18:46:31		prediction is completed & result is store in artifacts/Prediction/predict.csv
